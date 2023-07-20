@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="header"><h1>--- Kalkulator BMI ---</h1></div>
+    <div class="content">
+
+        <div class="explanation">
+            <p>BMI merupakan merupakan indeks berat badan seseorang yang 
+                biasa digunakan untuk melakukan pengukuran dengan memperhitungkan berat badan
+                orang tersebut saat itu dan tinggi badan yang dimilikinya. BMI juga berfungsi
+                sebagai indikator pengukuran untuk menentukan kategori berat badan ideal atau tidak
+            </p>
+        </div>
+        <div class="container">
+            <form>
+                <label for="gen">Jenis Kelamin</label><br>
+                <input type="radio" id="boy" name="gender" value="pria">
+                <label for="boy">Pria</label>
+                <input type="radio" id="girl" name="gender" value="wanita">
+                <label for="girl">Wanita</label>
+                <br><br>
+                <!-- inputUsia -->
+                <label for="inputUsia">Usia (tahun)</label><br>
+                <input type="text" id="inputUsia" name="inputUsia"><br><br>
+                <!-- inputBerat -->
+                <label for="inputBerat">Berat badan (kg)</label><br>
+                <input type="text" id="inputBerat" name="inputBerat"><br><span id="berat_error"></span>
+                <br><br>
+                <!-- inputTinggi -->
+                <label for="inputTinggi">Tinggi badan (cm)</label><br>
+                <input type="text" id="inputTinggi" name="inputTinggi"><br><span id="tinggi_error"></span>
+                <br><br>
+                <button type="submit" id="hitungBMI">Hitung BMI</button>
+                <br><br>
+                <label for="hasil">Hasil :</label><br>
+                <p id="hasil"></p>
+            </form>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>  
+</body>
+</html>
